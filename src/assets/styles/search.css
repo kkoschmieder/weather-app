@@ -1,0 +1,32 @@
+.search-bar {
+    background: linear-gradient(90deg, rgba(6,58,99,1) 28%, rgba(20,80,142,1) 67%);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.search-input {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    padding: 12px 16px;
+    border-radius: 32px;
+}
+
+button {
+    width: 10%;
+    background: white;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+button img {
+    width: 50%;
+}
+
+.search-icon {
+    width: 10%;
+}
