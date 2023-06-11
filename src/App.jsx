@@ -32,7 +32,7 @@ function App() {
     <div className="app">
       <div className="wrapper">
         <Search>
-          <input id='autocomplete' className='autocomplete' value={cityName} onChange={handleChange}/>
+          <input id='autocomplete' className='autocomplete' placeholder='Wprowadz nazwę miasta' value={cityName} onChange={handleChange}/>
           <button onClick={handleSubmit}><img src='./images/search.svg' alt='Search'/></button>
         </Search>
         <Container className='current-weather'>
