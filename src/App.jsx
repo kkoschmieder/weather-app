@@ -33,7 +33,7 @@ function App() {
       <div className="wrapper">
         <Search>
           <input id='autocomplete' className='autocomplete' value={cityName} onChange={handleChange}/>
-          <button onClick={handleSubmit}><img src='./src/assets/images/search.svg' alt='Search'/></button>
+          <button onClick={handleSubmit}><img src='./images/search.svg' alt='Search'/></button>
         </Search>
         <Container className='current-weather'>
           <Weather data={data.currentWeather}/>
