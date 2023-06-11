@@ -7,6 +7,7 @@ function geoCode(name) {
     return (
         axios.get(API_URL).then(data => {
             const {lat, lon} = data?.data.features[0].properties
+            console.log(data)
             return {lat, lon}
         })
     )

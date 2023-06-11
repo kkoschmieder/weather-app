@@ -7,12 +7,13 @@
     border-radius: 8px;
 }
 
-.search-input {
+.autocomplete {
     font-size: 20px;
     font-weight: bold;
     width: 80%;
     padding: 12px 16px;
     border-radius: 32px;
+    position: relative;
 }
 
 button {

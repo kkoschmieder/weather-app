@@ -12,7 +12,7 @@ function App() {
   const [cityName, setCityName] = useState('');
 
   function handleChange(event) {
-    setCityName(event.target.value)
+    setCityName(event.target.value);
   }
 
   function handleSubmit() {
@@ -32,7 +32,7 @@ function App() {
     <div className="app">
       <div className="wrapper">
         <Search>
-          <input type='text' className='search-input' placeholder='Wpisz nazwę miasta' value={cityName} onChange={handleChange}/>
+          <input id='autocomplete' className='autocomplete' value={cityName} onChange={handleChange}/>
           <button onClick={handleSubmit}><img src='/src/assets/images/search.svg' alt='Search'/></button>
         </Search>
         <Container className='current-weather'>
