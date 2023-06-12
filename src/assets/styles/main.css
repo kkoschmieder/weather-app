@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(161,143,244,0.500437675070028) 32%, rgba(98,180,252,0.5032387955182073) 54%, rgba(35,151,252,0.5032387955182073) 84%);
+}

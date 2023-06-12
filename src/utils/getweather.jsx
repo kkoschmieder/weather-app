@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function getWeather(lat, lon, timezone) {
+function getWeather(lat, lon, timezone, city) {
     const url = 'https://api.open-meteo.com/v1/forecast?hourly=temperature_2m,apparent_temperature,windspeed_10m&daily=weathercode,temperature_2m_max,apparent_temperature_max,precipitation_sum,windspeed_10m_max&current_weather=true&timeformat=unixtime';
     
     return axios.get(url,
@@ -15,6 +15,7 @@ function getWeather(lat, lon, timezone) {
         return {
             currentWeather: parseCurrentWeather(data),
             weatherForecast: parseWeatherForecast(data),
+            city: city,
         }
     })
 }

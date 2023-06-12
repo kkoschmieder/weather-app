@@ -1,5 +1,4 @@
 .search-bar {
-    background: linear-gradient(90deg, rgba(6,58,99,1) 28%, rgba(20,80,142,1) 67%);
     color: white;
     padding: 1.5rem;
     display: flex;
@@ -7,7 +6,7 @@
     border-radius: 8px;
 }
 
-.autocomplete {
+.search {
     font-size: 20px;
     font-weight: bold;
     width: 80%;

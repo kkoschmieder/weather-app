@@ -1,19 +1,4 @@
 .container {
-    background: linear-gradient(90deg, rgba(6,58,99,1) 28%, rgba(20,80,142,1) 67%);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 1.5rem;
-}
-
-.wrapper {
-    width: 768px;
-    margin-top: -512px;
-    display: grid;
-    border-radius: 32px;
-    gap: .75rem;
-}
-
-.weather-forecast {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
