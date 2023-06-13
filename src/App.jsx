@@ -32,24 +32,24 @@ function App() {
   
   return (
     <div className="app">
-      <Search>
-        <input className='search' placeholder='Wprowadz nazwę miasta' value={cityName} onChange={handleChange}/>
-        <button onClick={handleSubmit}><img src='./images/search.svg' alt='Search'/></button>
-      </Search>
-      <div className="wrapper">
-        <Container className='current-weather'>
+      <div className='data-details'>
+        <Search value={cityName} onChange={handleChange} onClick={handleSubmit} />
+      </div>
+      <div className='weather-details'>
+        <Container>
           <Weather data={data.currentWeather} name={data.city}/>
         </Container>
         <Container className='weather-forecast'>
           {
             data.weatherForecast?.map((data, key) => {
               return (
-                <Daily data={data} key={key}/>
-              )
-            })
+              <Daily data={data} key={key}/>
+            )
+          })
           }
         </Container>
       </div>
+      <div className="ui"></div>
     </div>
   )
 }
