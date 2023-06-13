@@ -1,13 +1,14 @@
 .daily {
-    border: 1px solid green;
     padding: .75rem;
     border-radius: .5rem;
     background: rgba(77, 141, 245, .15);
     text-align: center;
     color: white;
     font-weight: bold;
+    backdrop-filter: blur(8px);
+    /* cursor: pointer;   // next feature - detailed weather forecast for chosen day*/
 }
 
 .daily img {
-    width: 64px;
+    width: 86px;
 }
