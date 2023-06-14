@@ -29,21 +29,20 @@ function App() {
     })
   }
 
-  
   return (
     <div className="app">
       <div className='data-details'>
-        <Search value={cityName} onChange={handleChange} onClick={handleSubmit} />
+        <Search value={cityName} onChange={handleChange} onClick={handleSubmit} id='parent'/>
       </div>
       <div className='weather-details'>
-        <Container>
-          <Weather data={data.currentWeather} name={data.city}/>
+        <Container className='padding'>
+          {(data)? <Weather data={data.currentWeather} name={data.city}/> : null}
         </Container>
         <Container className='weather-forecast'>
           {
             data.weatherForecast?.map((data, key) => {
               return (
-              <Daily data={data} key={key}/>
+              <Daily data={data} id={key} key={key}/>
             )
           })
           }

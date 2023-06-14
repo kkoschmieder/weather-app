@@ -9,9 +9,6 @@
 .current-weather {
     color: #fff;
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: .75rem;
     padding: 1rem;
@@ -22,8 +19,29 @@
     width: 192px;
 }
 
+.main-weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.detailed-weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.precip {
+    width: 64px;
+}
+
 .weather-forecast {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: .75rem;
+    background: rgba(77, 141, 245, .15);
 }

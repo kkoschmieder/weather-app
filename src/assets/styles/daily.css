@@ -1,12 +1,18 @@
 .daily {
     padding: .75rem;
-    border-radius: .5rem;
-    background: rgba(77, 141, 245, .15);
+    margin: 0 .1rem;
     text-align: center;
     color: white;
     font-weight: bold;
     backdrop-filter: blur(8px);
-    /* cursor: pointer;   // next feature - detailed weather forecast for chosen day*/
+}
+
+.daily:last-child {
+    margin-right: 0;
+}
+
+.daily:first-child {
+    margin-left: 0;
 }
 
 .daily img {
